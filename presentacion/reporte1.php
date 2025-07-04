@@ -7,9 +7,8 @@
 </head>
 <body>
     <div>
-        <h1>Mis Categorias</h1>
+        <h1>Categorias de la Familia <?=$_GET['idfam']?></h1>
         <hr>
-        <a href="guardarcategoria.php">Crear Nuevo</a>
         <table>
             <thead>
                 <tr>
@@ -22,7 +21,7 @@
                 <?php
                     require_once '../logica/LCategoria.php';
                     $log=new LCategoria();
-                    $categorias=$log->cargar();
+                    $categorias=$log->cargarPorFamilia($_GET['idfam']);
                     foreach($categorias as $cat){
                 ?>
                 <tr>

@@ -20,7 +20,7 @@
             </thead>
             <tbody>
                 <?php
-                    require '../logica/LFamilia.php';
+                    require_once '../logica/LFamilia.php';
                     $log=new LFamilia();
                     foreach($log->cargar() as $familia){
                 ?>

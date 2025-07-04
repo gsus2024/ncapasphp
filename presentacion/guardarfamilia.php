@@ -18,7 +18,7 @@
 </body>
 </html>
 <?php
-    require '../logica/LFamilia.php';
+    require_once '../logica/LFamilia.php';
     if($_POST){
         $fam=new Familia();
         $fam->setNombre($_POST['txtNom']);

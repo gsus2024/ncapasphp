@@ -1,6 +1,6 @@
 <?php
-    require '../datos/DB.php';
-    require '../interfaces/IFamilia.php';
+    require_once '../datos/DB.php';
+    require_once '../interfaces/IFamilia.php';
 
     class LFamilia implements IFamilia{
         public function guardar(Familia $familia){
